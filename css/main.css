@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#game{
+    height: 100vh;
+    background-image: url(/Assets/img/desktop-wallpaper-flappy-bird-backgrounds-flappy-bird.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;   
+    overflow: hidden;
+}
+
+#obstacle{
+    height: 100vh;
+    width: 90px;
+    background-color: #74B900;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    animation:obstacle-anim 2s  infinite linear ;
+    
+}
+#hole {
+    width: 90px;
+    height: 200px; 
+    background-color: #73E0FF;
+    position: absolute;
+    top: 150px; 
+    left: 100%;
+    z-index: 2;
+    animation:obstacle-anim 2s  infinite linear ;
+
+}
+
+#bird{
+    background-image: url(/Assets/img/Flappy-Bird-PNG-Pic.png);
+    background-size: cover;
+    width: 110px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    z-index: 3;
+}
+
+@keyframes obstacle-anim{
+    0%
+    {left:100%;
+    }
+    100%{
+        left:-60px;
+    }
+}
+
+#bird{
+    background-image: url(/Assets/img/Flappy-Bird-PNG-Pic.png);
+    background-size: cover;
+    width: 110px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    z-index: 3;
+}
